@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -58,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
     >
         <TextView
@@ -88,6 +89,7 @@
         android:layout_above="@+id/lgn"
         android:backgroundTint="@color/black"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15px"
     >
         <Button
             android:layout_width="wrap_content"

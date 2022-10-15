@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyPlace</string>
+    <string name="title">The Ultimate Property Search App in Nashik</string>
+    <string name="description">Discover New Projects &amp; Properties with detailed information &amp; all amenities at the best pricing directly from the sellers.</string>
 </resources>

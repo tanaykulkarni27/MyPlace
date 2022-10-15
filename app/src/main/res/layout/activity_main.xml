@@ -23,17 +23,78 @@
             android:src="@drawable/front_page"
         />
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
+        android:textSize="15dp"
         android:fontFamily="@font/poppins"
-        android:text="The Ultimate Property Search App in Nashik"
-        android:layout_below="@+id/card"
+        android:text="@string/description"
+        android:textColor="#555555"
+        android:id="@+id/desc"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
     />
-
+    <RelativeLayout
+        android:id="@+id/lgn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/poppins"
+            android:textSize="15dp"
+            android:id="@+id/ald"
+            android:textColor="#555555"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ald"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="Log in"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_above="@+id/lgn"
+        android:backgroundTint="@color/black"
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/poppins"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

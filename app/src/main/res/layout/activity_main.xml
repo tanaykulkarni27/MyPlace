@@ -12,6 +12,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         app:cardCornerRadius="20dp"
+        android:id="@+id/card"
     >
         <ImageView
             android:layout_width="match_parent"
@@ -22,5 +23,17 @@
             android:src="@drawable/front_page"
         />
     </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:text="The Ultimate Property Search App in Nashik"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+    />
 
 </RelativeLayout>

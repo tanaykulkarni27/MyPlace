@@ -87,6 +87,7 @@
         app:cardCornerRadius="20dp"
         android:layout_above="@+id/lgn"
         android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
     >
         <Button
             android:layout_width="wrap_content"
@@ -95,6 +96,8 @@
             android:layout_marginRight="20dp"
             android:fontFamily="@font/poppins"
             android:backgroundTint="@color/black"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:text="Register"
+        />
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

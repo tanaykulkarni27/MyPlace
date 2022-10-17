@@ -4,36 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".detail.detail_house">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/outer"
     >
-        <androidx.viewpager.widget.ViewPager
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/pager"
-        />
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pager"
+            />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / month"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#555555"
+                    android:textSize="15dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:id="@+id/rent_txt"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/full_screen"
+                android:background="@android:color/transparent"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 </RelativeLayout>
 
 <!--
 
-<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="\u20b9 500 / month"
-        android:fontFamily="@font/poppins"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="15dp"
-        android:background="@color/white"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:padding="3dp"
-        android:id="@+id/rent_txt"
-    />
+
     <ImageButton
         android:layout_width="20dp"
         android:layout_height="20dp"

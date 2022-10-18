@@ -30,6 +30,7 @@ public class detail_house extends AppCompatActivity {
         // rent of house
         TextView rent_text = (TextView) findViewById(R.id.rent_txt);
         rent_text.setText(Html.fromHtml("<b>\u20b9 500</b>/month"));
+        // name of house
 
         // beds
 

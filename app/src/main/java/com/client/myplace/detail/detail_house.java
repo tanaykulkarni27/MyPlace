@@ -42,9 +42,3 @@ public class detail_house extends AppCompatActivity {
         tx.setText("Cozy and homey house with the mot affordable price available in the marketplace. Beatifully designed by the world class architect and build with the best construction agency. with a direct view to one of the best beach in australia and sunset as a house.");
     }
 }
-
-/*
-BED &#x1F6CF;
-BATH : 🛁
-LOCATE :
-* */

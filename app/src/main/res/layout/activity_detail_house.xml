@@ -60,8 +60,120 @@
 
                 />
         </androidx.cardview.widget.CardView>
-
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:text="Name of house"
+        android:id="@+id/name"
+        android:layout_below="@id/outer"
+        android:layout_marginLeft="10dp"/>
+    <!--    bed -->
+    <RelativeLayout
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:id="@+id/t1"
+        android:layout_marginLeft="10dp"
+        >
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/t1i"
+            android:src="@drawable/bed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1t"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/t1i"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="3 beds"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+
+    <!--    bath -->
+    <RelativeLayout
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:id="@+id/t2"
+        android:layout_toEndOf="@+id/t1"
+        android:layout_marginLeft="10dp"
+        >
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/t2i"
+            android:src="@drawable/bath"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t2t"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/t2i"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="2 bath"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+
+    <!--    locate -->
+    <RelativeLayout
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:id="@+id/t3"
+        android:layout_toEndOf="@+id/t2"
+        android:layout_marginLeft="10dp"
+        >
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/t3i"
+            android:src="@drawable/place"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t3t"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/t3i"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="Visit"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/t1"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textSize="15dp"
+            android:textColor="#555555"
+            android:id="@+id/house_description"
+        />
+    </ScrollView>
 </RelativeLayout>
 
 <!--
@@ -72,5 +184,19 @@
         android:layout_height="20dp"
         android:src=""
     />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_toRightOf="@id/bath"
+        android:id="@+id/locate"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/black"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/place"
+    />
+
 
 -->
